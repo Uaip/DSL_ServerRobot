@@ -1,0 +1,11 @@
+Step welcome
+    Speak $name + "您好,请问有什么可以帮您?"
+    Listen 5,20
+    Branch "投诉" complainProc
+    Branch "账单" billProc
+    Silence silenceProc
+    Default defaultProc
+Step complainProc
+    Speak "您的意见是我们改进工作的动力,请问您还有什么补充?"
+    Listen 5,20
+    
